@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRAWIIN SPACE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .responsive-image {
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <picture>
+    <!-- Image paysage pour les écrans larges ou en mode paysage -->
+    <source media="(min-aspect-ratio: 1/1)" srcset="ONE PAGER POUR WEBSITE.png">
+    
+    <!-- Image verticale par défaut pour mobile / mode portrait -->
+    <img class="responsive-image" src="VERTICAL WEBSITE.png" alt="Drawiin Space">
+  </picture>
+
+</body>
+</html>
